@@ -35,7 +35,7 @@ int mtype(va_list args)
 int stype(va_list args)
 {
 	char *str = va_arg(args, char *);
-	char *nil_str = "(nil)";
+	char *nil_str = "(null)";
 	int lenght;
 
 	if (str == NULL)
