@@ -11,6 +11,7 @@
 int ctype(va_list args)
 {
 	char letter = va_arg(args, int);
+
 	write(1, &letter, 1);
 	return (1);
 }

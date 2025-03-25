@@ -7,7 +7,7 @@ typedef struct print_specifiers
 {
 	char type;
 	int (*func)(va_list args);
-}print_specifiers;
+} print_specifiers;
 
 int _putchar(char c);
 int ft_strlen(char *str);
