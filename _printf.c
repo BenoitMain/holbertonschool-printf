@@ -12,7 +12,8 @@ int _printf(const char *format, ...)
 {
 	int i = 0, count = 0, format_index;
 	print_specifiers arrayspecifiers[] = {
-	    {'c', ctype}, {'%', mtype}, {'s', stype}, {'\0', NULL}};
+	{'c', ctype}, {'%', mtype}, {'s', stype}, {'d', dtype}, {'i', itype},
+	{'\0', NULL}};
 	va_list args;
 
 	va_start(args, format);
@@ -30,9 +31,7 @@ int _printf(const char *format, ...)
 			}
 			format_index = find_format_type(format[i], arrayspecifiers);
 			if (format_index >= 0)
-			{
 				count += arrayspecifiers[format_index].func(args);
-			}
 			else
 			{
 				_putchar('%');

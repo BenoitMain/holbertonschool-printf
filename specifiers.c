@@ -48,3 +48,33 @@ int stype(va_list args)
 	write(1, str, lenght);
 	return (lenght);
 }
+/**
+ * dtype - Prints an integer as a decimal number.
+ * @args: A va_list containing the integer to print.
+ *
+ * Return: The number of characters printed.
+ */
+int dtype(va_list args)
+{
+	int number = va_arg(args, int);
+	char str[20];
+	int lenght = convert_to_string(number, str);
+
+	write(1, str, lenght);
+	return (lenght);
+}
+/**
+ ** itype - Prints an integer.
+ * @args: A va_list containing the integer to print.
+ *
+ * Return: The number of characters printed.
+ */
+int itype(va_list args)
+{
+	int number = va_arg(args, int);
+	char str[20];
+	int length = convert_to_string(number, str);
+
+	write(1, str, length);
+	return (length);
+}
