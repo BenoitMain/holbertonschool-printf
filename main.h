@@ -11,6 +11,7 @@ typedef struct print_specifiers
 
 int _putchar(char c);
 int ft_strlen(char *str);
+int convert_to_string(int num, char *str);
 int find_format_type(char format_char, print_specifiers *specifiers);
 
 
@@ -18,6 +19,8 @@ int find_format_type(char format_char, print_specifiers *specifiers);
 int ctype(va_list args);
 int stype(va_list args);
 int mtype(va_list args);
+int dtype(va_list args);
+int itype(va_list args);
 
 int _printf(const char *format, ...);
 
