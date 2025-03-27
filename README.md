@@ -2,7 +2,7 @@
 
 # Printf Project 🎉
 
-## Description
+## Description 🧐
 
 This project is an implementation of the `printf` function in C 📚. It aims to replicate the functionality of the standard C library `printf` function, formatting and printing a series of characters and values to the standard output stream 💻.
 
