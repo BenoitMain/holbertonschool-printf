@@ -215,7 +215,9 @@ Performance non optimisée pour les grandes sorties
 .BR printf(3), write(2), stdarg(3)
 
 ```
-Flowchart :
+Flowchart :sparkles:
+
+![mon diagrame](https://raw.githubusercontent.com/BenoitMain/holbertonschool-printf/refs/heads/main/Flow%20Chart%20_printf.drawio.svg)
 
 
 Authors :``` BenoitMain ```
