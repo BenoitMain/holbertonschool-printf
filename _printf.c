@@ -12,8 +12,8 @@ int _printf(const char *format, ...)
 {
 	int i = 0, count = 0, format_index;
 	print_specifiers arrayspecifiers[] = {
-	{'c', ctype}, {'%', mtype}, {'s', stype}, {'d', dtype}, {'i', itype},
-	{'\0', NULL}};
+	    {'c', ctype}, {'%', mtype}, {'s', stype}, {'d', dtype},
+	     {'i', itype}, {'b', btype}, {'\0', NULL}};
 	va_list args;
 
 	va_start(args, format);
