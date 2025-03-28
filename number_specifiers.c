@@ -34,16 +34,29 @@ int itype(va_list args)
 }
 /**
  * btypte: Convert int to binary.
- *  @args: A va_list containing the binary to print.
+ * @args: A va_list containing the binary to print.
  *
  * Return: The binary characters printed.
  */
 int btype(va_list args)
 {
-	int binary = va_arg(args, int);
-	char str[32];
-	int length = decimalToBinary(binary, str);
+	int n;
+	unsigned int u;
+	char str[33];
+	int i;
 
-	write(1, str, length);
-	return (length);
+	n = va_arg(args, int);
+
+	if (n < 0)
+		u = (unsigned int)n;
+	else
+		u = (unsigned int)n;
+
+	for (i = 31; i >= 0; i--)
+	{
+		str[31 - i] = ((u >> i) & 1) ? '1' : '0';
+	}
+	str[32] = '\0';
+
+	return (write(1, str, 32));
 }
